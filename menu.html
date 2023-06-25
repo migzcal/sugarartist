@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <a href="#hero">
+                <img class="logo" src="images/logo.png" alt="Sugar Artist logo">
+            </a>
+        </div>
+        <nav>
+            <input type="checkbox" id="nav" class="hidden"/>
+            <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+            <div class="nav-container">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:sugarartistperth@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+        <div class="nav-icons">
+            <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/">Shop</a>
+        </div>
+    </header>
+
+    <section id="menu-pack">
+        <div class="menu-text">
+            <p>Our Products</p>
+            <h1>Packs</h1>
+        </div>
+        <div class="pack-wrapper">
+            <div class="pack-wrapper-details">
+                <sl-details summary="Single" class="custom-icons">
+                    <sl-icon name="plus" slot="expand-icon"></sl-icon>
+                    <sl-icon name="dash" slot="collapse-icon"></sl-icon>
+
+                    <div style="display: flex;">
+                      <div style="width: 50%;">
+                        Classic: $4<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/#ENcVLo">Buy</a>
+                      </div>
+                      <div style="width: 50%;">
+                        Assorted: $4.5<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/#ENcVLo">Buy</a>
+                      </div>
+                    </div>
+                </sl-details>
+
+                <sl-details summary="4 Pack" class="custom-icons">
+                    <sl-icon name="plus" slot="expand-icon"></sl-icon>
+                    <sl-icon name="dash" slot="collapse-icon"></sl-icon>
+
+                    <div style="display: flex;">
+                      <div style="width: 50%;">
+                        Classic: $14<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/product/4-pack-classic-ensaymada/32?cs=true&cst=custom">Buy</a>
+                      </div>
+                      <div style="width: 50%;">
+                        Assorted: $16<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/product/4-pack-assorted/23?cs=true&cst=custom">Buy</a>
+                      </div>
+                    </div>
+                </sl-details>
+
+                <sl-details summary="6 Pack" class="custom-icons">
+                    <sl-icon name="plus" slot="expand-icon"></sl-icon>
+                    <sl-icon name="dash" slot="collapse-icon"></sl-icon>
+
+                    <div style="display: flex;">
+                      <div style="width: 50%;">
+                        Classic: $20<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/product/6-pack-classic-ensaymada/31?cs=true&cst=custom">Buy</a>
+                      </div>
+                      <div style="width: 50%;">
+                        Assorted: $24<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/product/6-pack-assorted/24?cs=true&cst=custom">Buy</a>
+                      </div>
+                    </div>
+                </sl-details>
+
+                <sl-details summary="Dozen Pack" class="custom-icons">
+                    <sl-icon name="plus" slot="expand-icon"></sl-icon>
+                    <sl-icon name="dash" slot="collapse-icon"></sl-icon>
+
+                    <div style="display: flex;">
+                      <div style="width: 50%;">
+                        Classic: $38<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/product/dozen-classic-ensaymada/30?cs=true&cst=custom">Buy</a>
+                      </div>
+                      <div style="width: 50%;">
+                        Assorted: $42<br>
+                        <a class="menu-btn" target="_blank" rel="noopener noreferrer" href="https://sugarartist-ordering.square.site/product/dozen-assorted/25?cs=true&cst=custom">Buy</a>
+                      </div>
+                    </div>
+                </sl-details>
+
+            </div>
+
+            <div class="pack-img">
+                <img src="images/package.png" alt="4 pack vector">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu-flavour">
+        <div class="menu-text">
+            <h1>Flavours</h1>
+        </div>
+
+        <div class="flavour-wrapper">
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/classic.jpg"
+                  alt="Classic Cheese flavour"
+                />
+                <div slot="header">
+                    Classic Cheese Ensaymada<br><br>
+                    $4
+                </div>
+                Classic Filipino cheese on top of homemade buttercream
+            </sl-card>
+
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/velvet.jpg"
+                  alt="Red Velvet flavour"
+                />
+                <div slot="header">
+                    Red Velvet Ensaymada<br><br>
+                    $4.5
+                </div>
+                Red velvet cake crumbs on top of homemade buttercream with a filling of cream cheese
+            </sl-card>
+
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/tablea.jpg"
+                  alt="Tablea flavour"
+                />
+                <div slot="header">
+                    Tablea Ensaymada<br><br>
+                    $4.5
+                </div>
+                Rich, dark chocolate with a filling of tasty pasty cream
+            </sl-card>
+
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/yema.jpg"
+                  alt="Yema flavour"
+                />
+                <div slot="header">
+                    Yema Ensaymada<br><br>
+                    $4.5
+                </div>
+                Crowned dulce de leche on top of homemade buttercream then finished with cheese on top
+            </sl-card>
+
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/ube.jpg"
+                  alt="Ube Halaya flavour"
+                />
+                <div slot="header">
+                    Ube Halaya Ensaymada<br><br>
+                    $4.5
+                </div>
+                Tasty ube halaya on top of buttercream then finished with cheese on the edges
+            </sl-card>
+
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/strawberry.jpg"
+                  alt="Ube Halaya flavour"
+                />
+                <div slot="header">
+                    Strawberry Cheesecake Ensaymada<br><br>
+                    $4.5
+                </div>
+                Ensaymadas filled with our homemade cream cheese filling, topped with strawberry buttercream and dipped into biscoff cookies
+            </sl-card>
+
+            <sl-card class="flavour-card">
+                <img style="border-radius: 25px; border: 3px solid #894E3F;"
+                  slot="image"
+                  src="images/cookiescream.jpg"
+                  alt="Ube Halaya flavour"
+                />
+                <div slot="header">
+                    Cookies and Cream Ensaymada<br><br>
+                    $4.5
+                </div>
+                Oreo cookies on top of our homemade butter cream and filled with our Cream Cheese filling all in an ensaymada bun
+            </sl-card>
+        </div>
+    </section>
+
+    <section id="menu-catering">
+        <div class="menu-text">
+            <h1>Request Catering</h1>
+        </div>
+        <div class="menu-contact-text">
+            <p>
+                Contact us for catering services, and we'll promptly respond to your inquiry!
+            </p>
+            <a class="dark-text-link" href="mailto:sugarartistperth@gmail.com" target="_blank" rel="noopener noreferrer">
+                sugarartistperth@gmail.com
+            </a>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <img class="logo" src="images/logo-dark.png" alt="Sugar Artist dark logo">
+
+        <div class="footer-text">
+            <h3>
+                Visit us at Freo Markets!
+            </h3>
+            <a class="location-light-btn" href="https://maps.google.com/maps?q=Shop Y125, Fremantle Market, Corner Parry Street and, William St, Fremantle WA 6160" target="_blank" rel="noopener noreferrer">
+                Shop Y125, Fremantle Market, Corner Parry Street and, William St, Fremantle WA 6160
+            </a>
+            <p>
+                Open from Friday to Sunday from 9AM to 5:30PM
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://www.facebook.com/SugarArtistPerth/" target="_blank" rel="noopener noreferrer"><sl-icon name="facebook" style="font-size: 24px;"></sl-icon></a>
+            <a href="https://www.instagram.com/sugarartistperth/" target="_blank" rel="noopener noreferrer"><sl-icon name="instagram" style="font-size: 24px;"></sl-icon></a>
+            <a href="mailto:sugarartistperth@gmail.com" target="_blank" rel="noopener noreferrer"><sl-icon name="envelope" style="font-size: 24px;"></sl-icon></a>
+            <a href="tel:0478739404" target="_blank" rel="noopener noreferrer"><sl-icon name="telephone" style="font-size: 24px;"></sl-icon></a>
+        </div>
+
+        <p>
+            Copyright © 2023 Sugar Artist.
+        </p>
+    </footer>
+</body>
+</html>
