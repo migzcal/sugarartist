@@ -11,6 +11,11 @@ body {
   font-family: 'Lovelo', sans-serif;
 }
 
+@font-face {
+  font-family: 'Lovelo';
+  src: url(../fonts/Lovelo-Black.woff) format('woff');
+}
+
 /*--------------------------------------------------------------------------------------------------------*/
 /* ====== Header Styling ======*/
 
