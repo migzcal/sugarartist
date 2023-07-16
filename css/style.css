@@ -776,7 +776,7 @@ sl-card::part(footer){
   text-align: center;
   background-color: #894E3F;
   color: #ffffff;
-  padding: 7% 10%;
+  padding: 7% 5%;
 }
 
 .footer-text h3 {
